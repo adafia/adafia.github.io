@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica Neue', 'Lucida Grande',sans-serif;
+}
+
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+.terminal {
+  background: #000814;
+  width: 100%;
+  height: 100vh;
+  padding: 2em 0 0 0;
+  font-family: 'Roboto Mono' monospace;
+}
+
+.userEnteredText {
+  color: rgb(255, 255, 255, 0.5);
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.prompt {
+  color: #ffc300;
+}
+
+#terminal-results {
+  width: 100%;
+  height: 80vh;
+  padding: 0.75em;
+  overflow-y: auto;
+  resize: none;
+  border: none;
+  font-size: 0.875rem;
+  line-height: 1.75em;
+  display: block;
+  color: rgb(237, 246, 249, 0.9);
+}
+
+#terminal-results a {
+  color: rgb(237, 246, 249, 0.9);
+  text-decoration: underline;
+}
+
+#terminal-input {
+  background: #000814;
+  display: block;
+  border: none;
+  border-top: 1px solid rgb(237, 246, 249, 0.2);
+  border-radius: 0 0 4px 4px;
+  width: 100%;
+  color: rgb(237, 246, 249);
+  padding: 18px;
+  font-size: 14px;
+  outline: none;
+  font-family: 'Roboto Mono' monospace;
+}
