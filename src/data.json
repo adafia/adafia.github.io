@@ -1,0 +1,76 @@
+{
+  "commands": [
+    {
+      "word": "whoami",
+      "description": "whoami returns a brief text attepmts to describe who i am"
+    },
+    {
+      "word": "resources",
+      "description": "list of blogs(🔥) and videos(🚀) I find interesting"
+    },
+    {
+      "word": "clear",
+      "description": "clears the screen"
+    },
+    {
+      "word": "exit",
+      "description": "exit terminal"
+    },
+    {
+      "word": "open",
+      "description": "open + web URL, opens the URL in a new tab of your browser"
+    },
+    {
+      "word": "Wiki",
+      "description": "Wiki + keyword to search directly in Wikipedia (e.g wiki terminal)"
+    },
+    {
+      "word": "Google",
+      "description": "Google + keyword to search directly with Google (e.g google event loop)"
+    },
+    {
+      "word": "YouTube",
+      "description": "YouTube + keyword to search for content on YouTube (e.g functional programming)"
+    },
+    {
+      "word": "Time",
+      "description": "'Time' displays the current time"
+    },
+    {
+      "word": "Date",
+      "description": "'Date' displays the current date"
+    }
+  ],
+"resources" : [
+    {
+      "title": "Big O Notation",
+      "link": "https://dev.to/adafia/big-o-notation-3oi6",
+      "type": "blog"
+    },
+    {
+      "title": "Brief Performance Analysis of Arrays and Objects through the lens of Big O Notation",
+      "link": "https://dev.to/adafia/brief-performance-analysis-of-arrays-and-objects-through-the-lens-of-big-o-notation-4id3",
+      "type": "blog"
+    },
+    {
+      "title": "FOUC, and the Death of Progressive Enhancement with Kyle Simpson",
+      "link": "https://www.youtube.com/watch?v=HVSkcnIJEC0",
+      "type": "video"
+    },
+    {
+      "title": "The Why of Go",
+      "link": "https://www.youtube.com/watch?v=bmZNaUcwBt4",
+      "type": "video"
+    },
+    {
+      "title": "What the heck is the event loop anyway? | Philip Roberts | JSConf EU",
+      "link": "https://www.youtube.com/watch?v=8aGhZQkoFbQ4",
+      "type": "video"
+    },
+    {
+      "title": "Cracking the front-end interview",
+      "link": "https://www.freecodecamp.org/news/cracking-the-front-end-interview-9a34cd46237/",
+      "type": "video"
+    }
+  ]
+}
