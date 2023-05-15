@@ -2,7 +2,7 @@
   "commands": [
     {
       "word": "whoami",
-      "description": "whoami returns a brief text attepmts to describe who i am"
+      "description": "whoami returns a brief text describing who I am"
     },
     {
       "word": "resources",
@@ -41,7 +41,7 @@
       "description": "'Date' displays the current date"
     }
   ],
-"resources" : [
+  "resources": [
     {
       "title": "Big O Notation",
       "link": "https://dev.to/adafia/big-o-notation-3oi6",
