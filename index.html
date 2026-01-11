@@ -1,46 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>adafia</title>
-  <link rel="stylesheet" href="./styles/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Adafia | Software Engineer</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Fonts: Inter for UI, JetBrains Mono for code vibes -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            accent: '#38bdf8', // Light blue
+                            text: '#94a3b8',
+                            card: '#1e293b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom scrollbar for a polished look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569; 
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-2px);
+            border-color: #38bdf8;
+            background-color: #1e293b;
+        }
+    </style>
 </head>
-<body>
-  <div class="wrapper">
-    <h1>Samuel Adafia</h1>
-    <section class="whoai">
-      <h2>Whoami</h2>
-      <p>
-        Hello, my name is Samuel Adafia, welcome to my slice of the internet. I'm a Youtube and Udemy trained full-stack web developer.
-      </p>
-      <p>
-        I love building software and have been building for the web for the past <span class="experience"></span> years. I'm currently studying mechatronic engineering so I can be valuable in the robot uprising.
-      </p>
-    </section>
-    <section class="interests">
-      <h2>Here's what I find interesting on the internet</h2>
-      <p>These are links to conference talks on YouTube and the rare occassional blog posts authored by yours truly or someone smarter.</p>
-      <ul class="interest-list">
-        <li class="interest-list-item"><a href="https://dev.to/adafia/big-o-notation-3oi6">Big O Notation</a></li>
-        <li class="interest-list-item"><a href="https://dev.to/adafia/brief-performance-analysis-of-arrays-and-objects-through-the-lens-of-big-o-notation-4id3">Brief Performance Analysis of Arrays and Objects through the lens of Big O Notation</a></li>
-        <li class="interest-list-item"><a href="https://www.youtube.com/watch?v=HVSkcnIJEC0">FOUC, and the Death of Progressive Enhancement with Kyle Simpson</a></li>
-        <li class="interest-list-item"><a href="https://www.youtube.com/watch?v=bmZNaUcwBt4">The Why of Go</a></li>
-        <li class="interest-list-item"><a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ">What the heck is the event loop anyway? | Philip Roberts | JSConf EU</a></li>
-      </ul>
-    </section>
-    <section class="projects">
-      <h2>Projects</h2>
-      <p>Things I built for fun while learning a specific technology.</p>
-      <ul>
-        <li><a href="https://samuel-adafia.firebaseapp.com/">My portfolio website</a>
-        </li>
-        <li><a href="/terminal.html">Simplistic terminal emulator</a>
-        </li>
-      </ul>
-    </section>
-  </div>
-  <script src="./main.js"></script>
+<body class="bg-brand-dark text-slate-300 font-sans antialiased selection:bg-brand-accent selection:text-white">
+
+    <div class="max-w-3xl mx-auto px-6 py-12 md:py-20">
+        
+        <!-- Header / Intro -->
+        <header class="mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
+                Samuel Adafia
+            </h1>
+            <p class="text-xl text-brand-text max-w-lg leading-relaxed">
+                Software Engineer based in Kraków, Poland. Currently building sustainable energy solutions at <span class="text-white font-medium">Hitachi Energy</span>.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-3">
+                <span class="px-3 py-1 text-xs font-mono bg-slate-800 text-brand-accent rounded-full border border-slate-700">React/TypeScript</span>
+                <span class="px-3 py-1 text-xs font-mono bg-slate-800 text-brand-accent rounded-full border border-slate-700">Go</span>
+                <span class="px-3 py-1 text-xs font-mono bg-slate-800 text-brand-accent rounded-full border border-slate-700">C#</span>
+                <span class="px-3 py-1 text-xs font-mono bg-slate-800 text-brand-accent rounded-full border border-slate-700">Node.js</span>
+            </div>
+        </header>
+
+        <main class="space-y-16">
+            
+            <!-- WHOAMI Section -->
+            <section class="whoai">
+                <div class="flex items-center gap-3 mb-6">
+                    <i data-lucide="terminal" class="text-brand-accent"></i>
+                    <h2 class="text-2xl font-semibold text-white">Who Am I?</h2>
+                </div>
+                <div class="prose prose-invert prose-lg text-brand-text bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+                    <p class="mb-4">
+                        Hello, welcome to my slice of the internet. I started my journey in Horticultural Science but pivoted to software engineering, driven by a passion for building systems that matter.
+                    </p>
+                    <p>
+                        I have <span id="experience" class="font-mono font-bold text-brand-accent">4+</span> years of experience building scalable web applications and microservices. I'm currently focused on facilitating grid monitoring and automation to support a sustainable future.
+                    </p>
+                </div>
+            </section>
+
+            <!-- EXPERIENCE Section (New) -->
+            <section class="experience">
+                <div class="flex items-center gap-3 mb-6">
+                    <i data-lucide="briefcase" class="text-brand-accent"></i>
+                    <h2 class="text-2xl font-semibold text-white">Experience</h2>
+                </div>
+                <div class="space-y-8 border-l-2 border-slate-700 pl-8 ml-3 relative">
+                    
+                    <!-- Job 1 -->
+                    <div class="relative">
+                        <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-2 border-brand-accent bg-brand-dark"></span>
+                        <h3 class="text-lg font-bold text-white">Software Engineer</h3>
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:gap-2 text-sm text-slate-500 mb-2">
+                            <span class="text-brand-accent">Hitachi Energy</span>
+                            <span class="hidden sm:inline">•</span>
+                            <span>Oct 2022 - Present</span>
+                        </div>
+                        <p class="text-slate-400">
+                            Contributing to web applications which facilitate grid monitoring and automation using React and TypeScript.
+                        </p>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="relative">
+                        <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-2 border-slate-600 bg-brand-dark"></span>
+                        <h3 class="text-lg font-bold text-white">Senior Full-Stack Developer</h3>
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:gap-2 text-sm text-slate-500 mb-2">
+                            <span class="text-slate-300">Bank of Kigali Limited</span>
+                            <span class="hidden sm:inline">•</span>
+                            <span>Jan 2021 - Aug 2021</span>
+                        </div>
+                        <p class="text-slate-400">
+                            Built backend microservices (Kotlin & Node.js) for internet and mobile banking solutions. Developed Beneficiary and Image services from the ground up.
+                        </p>
+                    </div>
+
+                    <!-- Job 3 -->
+                    <div class="relative">
+                        <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-2 border-slate-600 bg-brand-dark"></span>
+                        <h3 class="text-lg font-bold text-white">Associate Software Engineer</h3>
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:gap-2 text-sm text-slate-500 mb-2">
+                            <span class="text-slate-300">Andela</span>
+                            <span class="hidden sm:inline">•</span>
+                            <span>June 2019 - April 2020</span>
+                        </div>
+                        <p class="text-slate-400">
+                             worked on complex web applications in agile teams. Built an in-house meeting room management app using Python (Flask) and GraphQL.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- INTERESTS Section -->
+            <section class="interests">
+                <div class="flex items-center gap-3 mb-6">
+                    <i data-lucide="bookmark" class="text-brand-accent"></i>
+                    <h2 class="text-2xl font-semibold text-white">Interesting Finds</h2>
+                </div>
+                
+                <div class="grid gap-4">
+                    <!-- Interest Item 1 -->
+                    <a href="https://dev.to/adafia/big-o-notation-3oi6" target="_blank" class="group block p-4 rounded-lg border border-slate-700 bg-slate-800/30 card-hover">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h3 class="text-lg font-medium text-slate-200 group-hover:text-brand-accent transition-colors">Big O Notation</h3>
+                                <p class="text-sm text-slate-500 mt-1">Article by Samuel Adafia</p>
+                            </div>
+                            <i data-lucide="external-link" class="w-5 h-5 text-slate-600 group-hover:text-brand-accent"></i>
+                        </div>
+                    </a>
+
+                    <!-- Interest Item 2 -->
+                    <a href="https://dev.to/adafia/brief-performance-analysis-of-arrays-and-objects-through-the-lens-of-big-o-notation-4id3" target="_blank" class="group block p-4 rounded-lg border border-slate-700 bg-slate-800/30 card-hover">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h3 class="text-lg font-medium text-slate-200 group-hover:text-brand-accent transition-colors">Performance Analysis of Arrays & Objects</h3>
+                                <p class="text-sm text-slate-500 mt-1">Article by Samuel Adafia</p>
+                            </div>
+                            <i data-lucide="external-link" class="w-5 h-5 text-slate-600 group-hover:text-brand-accent"></i>
+                        </div>
+                    </a>
+
+                    <!-- Interest Item 3 -->
+                    <a href="https://www.youtube.com/watch?v=HVSkcnIJEC0" target="_blank" class="group block p-4 rounded-lg border border-slate-700 bg-slate-800/30 card-hover">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h3 class="text-lg font-medium text-slate-200 group-hover:text-brand-accent transition-colors">FOUC & The Death of Progressive Enhancement</h3>
+                                <p class="text-sm text-slate-500 mt-1">Talk by Kyle Simpson</p>
+                            </div>
+                            <i data-lucide="youtube" class="w-5 h-5 text-red-500/70 group-hover:text-red-500"></i>
+                        </div>
+                    </a>
+
+                    <!-- Interest Item 4 -->
+                    <a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ" target="_blank" class="group block p-4 rounded-lg border border-slate-700 bg-slate-800/30 card-hover">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h3 class="text-lg font-medium text-slate-200 group-hover:text-brand-accent transition-colors">What the heck is the event loop anyway?</h3>
+                                <p class="text-sm text-slate-500 mt-1">Talk by Philip Roberts | JSConf EU</p>
+                            </div>
+                            <i data-lucide="youtube" class="w-5 h-5 text-red-500/70 group-hover:text-red-500"></i>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- PROJECTS Section -->
+            <section class="projects">
+                <div class="flex items-center gap-3 mb-6">
+                    <i data-lucide="cpu" class="text-brand-accent"></i>
+                    <h2 class="text-2xl font-semibold text-white">Projects</h2>
+                </div>
+                <p class="mb-6 text-sm text-slate-500 uppercase tracking-widest font-mono">Built for fun & learning</p>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <!-- Project 1 -->
+                    <a href="https://samuel-adafia.firebaseapp.com/" class="block p-6 rounded-xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-brand-accent transition-all group">
+                        <h3 class="font-bold text-lg text-white mb-2 group-hover:text-brand-accent">Portfolio Website</h3>
+                        <p class="text-slate-400 text-sm">The digital home for my work and thoughts.</p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="text-xs font-mono bg-slate-700 text-slate-300 px-2 py-1 rounded">HTML</span>
+                            <span class="text-xs font-mono bg-slate-700 text-slate-300 px-2 py-1 rounded">CSS</span>
+                        </div>
+                    </a>
+
+                    <!-- Project 2 -->
+                    <a href="/terminal.html" class="block p-6 rounded-xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-brand-accent transition-all group">
+                        <h3 class="font-bold text-lg text-white mb-2 group-hover:text-brand-accent">Terminal Emulator</h3>
+                        <p class="text-slate-400 text-sm">A simplistic browser-based terminal emulator.</p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="text-xs font-mono bg-slate-700 text-slate-300 px-2 py-1 rounded">JS</span>
+                            <span class="text-xs font-mono bg-slate-700 text-slate-300 px-2 py-1 rounded">DOM</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="mt-20 pt-8 border-t border-slate-800 text-center text-slate-600 text-sm">
+            <p>&copy; <span id="year"></span> Samuel Adafia. <a href="https://www.linkedin.com/in/samuel-a-08418894" class="hover:text-brand-accent transition-colors">Connect on LinkedIn</a>.</p>
+        </footer>
+    </div>
+
+    <script>
+        // 1. Initialize Lucide Icons
+        lucide.createIcons();
+
+        // 2. Calculate Years of Experience
+        // Updated to 2019 (Andela start date)
+        const startYear = 2019; 
+        const currentYear = new Date().getFullYear();
+        const experience = currentYear - startYear;
+        
+        // Update the span text. If the calculation is 0, defaults to "1".
+        const expSpan = document.getElementById('experience');
+        if(expSpan) {
+            expSpan.textContent = experience > 0 ? experience + '+' : 1;
+        }
+
+        // 3. Update Footer Year
+        document.getElementById('year').textContent = currentYear;
+    </script>
 </body>
 </html>
