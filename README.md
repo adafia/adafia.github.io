@@ -1,25 +1,59 @@
-# adafia.github.io
+Hi there, I'm Samuel Adafia 👋
 
-## Samuel Adafia
+<a href="https://www.google.com/search?q=https://linkedin.com/in/samuel-a-08418894">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/LinkedIn-Connect-blue%3Fstyle%3Dfor-the-badge%26logo%3Dlinkedin" alt="LinkedIn" />
+</a>
+<a href="mailto:adafia.samuel@gmail.com">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Email-Contact_Me-c2410c%3Fstyle%3Dfor-the-badge%26logo%3Dgmail" alt="Email" />
+</a>
 
-### About Me
+<br />
 
-Hello, my name is Samuel Adafia, welcome to my slice of the internet. I'm a Youtube and Udemy trained full-stack web developer.
+visitor@github:~$ whoami
 
-I love building software and have been building for the web for the past 4 years. I'm currently studying mechatronic engineering so I can be valuable in the robot uprising.
+const samuel = {
+  role: "Software Engineer",
+  company: "Hitachi Energy",
+  location: "Cracow, Poland",
+  focus: ["Web Engineering", "Grid Automation", "Microservices"],
+  background: "From Horticultural Science 🌱 to Full-Stack Engineering 💻"
+};
 
-### Here's what I find interesting on the internet
 
-These are links to conference talks on YouTube and the rare occassional blog posts authored by yours truly or someone smarter.
+I am a Software Developer specializing in building complex web applications and backend systems that drive sustainable solutions. Currently, I'm contributing to our sustainable future at Hitachi Energy, facilitating grid monitoring and automation.
 
-- [Big O Notation](https://dev.to/adafia/big-o-notation-3oi6)
-- [Brief Performance Analysis of Arrays and Objects through the lens of Big O Notation](https://dev.to/adafia/brief-performance-analysis-of-arrays-and-objects-through-the-lens-of-big-o-notation-4id3)
-- [FOUC, and the Death of Progressive Enhancement with Kyle Simpson](https://www.youtube.com/watch?v=HVSkcnIJEC0)
-- [The Why of Go](https://www.youtube.com/watch?v=bmZNaUcwBt4)
-- [What the heck is the event loop anyway? | Philip Roberts | JSConf EU](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+visitor@github:~$ ls -la /skills
 
-### Things I've worked on in the past
+Languages
+<br />
 
-Blah
+Frontend & Backend
+<br />
 
-- [My portfolio website](https://samuel-adafia.firebaseapp.com)
+Infrastructure & Database
+<br />
+
+visitor@github:~$ cat experience.log
+
+Hitachi Energy (Oct 2022 - Present)
+
+Software Engineer: Building web applications for grid monitoring and automation using React/TypeScript.
+
+Bank of Kigali (Jan 2021 - Aug 2021)
+
+Senior Full-Stack Developer: Built backend microservices for internet & mobile banking (Kotlin/Node.js).
+
+Andela (Jun 2019 - Apr 2020)
+
+Associate Software Engineer: Developed internal tools using Python/Flask and mentored junior engineers.
+
+visitor@github:~$ curl stats
+
+<p align="left">
+<img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api%3Fusername%3Dsamueladafia%26show_icons%3Dtrue%26hide_border%3Dtrue%26theme%3Dgraywhite%26include_all_commits%3Dtrue%26count_private%3Dtrue" alt="Samuel's Stats" />
+<img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api/top-langs/%3Fusername%3Dsamueladafia%26layout%3Dcompact%26hide_border%3Dtrue%26theme%3Dgraywhite" alt="Top Langs" />
+</p>
+
+<p align="center">
+<samp>Typewriter Edition &copy; 2024 Samuel Adafia</samp>
+</p>
